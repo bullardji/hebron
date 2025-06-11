@@ -1,13 +1,44 @@
+/* style.css */
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1;
+}
+
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #fafafa;
+  background-color: #fafafa; /* fallback */
   color: #333;
+  position: relative;
+  z-index: 0;
 }
+
+/* Full-page background image with slight opacity */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url('images/c2af59aff60b0d6d8dd07a59c419f046_960x720_fit.jpeg') no-repeat center center/cover;
+  opacity: 0.3; /* adjust between 0.0 (transparent) and 1.0 (opaque) */
+  z-index: -1;
+}
+
+/* -- existing styles below -- */
 .site-header {
   background-color: #BA5640;
-  padding: 1em;
+  padding: 0.1em;
   text-align: center;
   color: #fff;
 }
@@ -16,17 +47,16 @@ nav {
   text-align: center;
   padding: 0.5em 0;
 }
-
 nav a {
   color: #fff;
   margin: 0 0.75em;
   text-decoration: none;
 }
-
 nav a:hover {
   text-decoration: underline;
 }
 .hero {
+  /* you can remove or leave this */
   text-align: center;
   margin: 2em 0;
 }
@@ -45,7 +75,7 @@ nav a:hover {
   background-color: #333;
   color: #fff;
   text-align: center;
-  padding: 1em;
+  padding: 0.1em;
 }
 .logo {
   max-width: 250px;
@@ -86,3 +116,70 @@ nav a:hover {
   display: block;
   margin: 2em auto;
 }
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1em;
+}
+.gallery-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+    .hero-quote {
+      font-style: italic;
+      text-align: center;
+      font-size: 1.6rem;
+      margin: 2rem 1rem 0.5rem;
+      color: #222;
+    }
+    .divider {
+      width: 6rem;
+      height: 0.3rem;
+      background-color: #BA5640;
+      margin: 0.5rem auto 1rem;
+      border-radius: 2px;
+    }
+    .tagline {
+      text-align: center;
+      font-weight: 600;
+      font-size: 1rem;
+      letter-spacing: 0.08em;
+      color: #555;
+      margin-bottom: 2rem;
+    }
+    .info-box {
+      background-color: rgba(0, 0, 0, 0.85);
+      color: #fff;
+      border-radius: 12px;
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto 3rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      line-height: 1.6;
+    }
+    .highlight {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+    .logo-side {
+      width: 180px;
+      height: auto;
+      border-radius: 8px;
+    }
+    .highlight-text {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #222;
+    }
+    .content {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }

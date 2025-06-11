@@ -12,22 +12,37 @@
   </header>
   <nav>
     <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="apply.html">Apply</a>
+    <a href="The-Threshing-Floor.html">The Threshing Floor</a>
+    <a href="Retreat-Center.html">Retreat Center</a>
+    <a href="The-College.html">Men&#39;s Bible College</a>
+    <a href="https://madpxm.com/contact" target="_blank">That&#39;s All It Takes</a>
   </nav>
+
   <main>
     <section class="content">
       <h2>Retreat Center</h2>
-      <p>Hebron is a Men’s Spiritual Retreat Center where you or your men’s group can gather to seek solace in the Word of God. In a home built for no phones, for brotherhood, and for devotion to Jesus in Psalms, Proverbs and Bible reading, no one leaves unchanged. Come for a week or come for a weekend. The kitchen co-op whole foods eatery is $10/day. All other cost are covered by generous donations to the cous fo raising up godly Christian men of all ages through trust in the name of Jesus Christ and devotion to the power of his Word.</p>
+      <p>Hebron is a Men’s Spiritual Retreat Center where you or your men’s group can gather to seek solace in the Word of God. In a home built for no phones, for brotherhood, and for devotion to Jesus in Psalms, Proverbs and Bible reading, no one leaves unchanged. Come for a week or come for a weekend. The kitchen co-op whole foods eatery is $10/day. All other costs are covered by generous donations for raising up godly Christian men of all ages through trust in the name of Jesus Christ and devotion to the power of his Word.</p>
+
       <div class="gallery">
-        <img src="images/c2af59aff60b0d6d8dd07a59c419f046_960x720_fit.jpeg" alt="House exterior" class="sub-hero">
-        <img src="images/c9df0e3ad73dfa4658b4c6cf8304f156_fit.jpg" alt="Student fellowship" class="sub-hero">
-        <img src="images/01126ccf75fa7b330fa9f9efede50a0c_360x364_fit.png" alt="Hebron Collegium logo" class="sub-hero">
+        <h2>Photo Gallery</h2>
+        <div class="gallery-grid" id="gallery-grid" style="margin: 2rem 0;"></div> 
       </div>
     </section>
   </main>
   <footer class="site-footer">
     <p>&copy; 2024 Hebron Collegium</p>
   </footer>
+
+  <script>
+    (function() {
+      const grid = document.getElementById('gallery-grid');
+      for (let i = 1; i <= 24; i++) {
+        const img = document.createElement('img');
+        img.src = `gallery/photo${i}.jpeg`;
+        img.alt = `Photo ${i}`;
+        grid.appendChild(img);
+      }
+    })();
+  </script>
 </body>
 </html>
