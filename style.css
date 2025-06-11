@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #fafafa;
+  color: #333;
+}
+.site-header {
+  background-color: #BA5640;
+  padding: 1em;
+  text-align: center;
+  color: #fff;
+}
+nav {
+  background-color: #333;
+  text-align: center;
+  padding: 0.5em 0;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 0.75em;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+.hero {
+  text-align: center;
+  margin: 2em 0;
+}
+.hero-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1em;
+  text-align: center;
+}
+.site-footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+}
