@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Retreat Center - Hebron Collegium</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>The Hebron Collegium</h1>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="The-Threshing-Floor.html">The Threshing Floor</a>
+    <a href="Retreat-Center.html">Retreat Center</a>
+    <a href="The-College.html">Men&#39;s Bible College</a>
+    <a href="https://madpxm.com/contact" target="_blank">That&#39;s All It Takes</a>
+  </nav>
+
+  <main>
+    <section class="content">
+      <h2>Retreat Center</h2>
+      <p>Hebron is a Men’s Spiritual Retreat Center where you or your men’s group can gather to seek solace in the Word of God. In a home built for no phones, for brotherhood, and for devotion to Jesus in Psalms, Proverbs and Bible reading, no one leaves unchanged. Come for a week or come for a weekend. The kitchen co-op whole foods eatery is $10/day. All other costs are covered by generous donations for raising up godly Christian men of all ages through trust in the name of Jesus Christ and devotion to the power of his Word.</p>
+
+      <div class="gallery">
+        <h2>Photo Gallery</h2>
+        <div class="gallery-grid" id="gallery-grid" style="margin: 2rem 0;"></div> 
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>&copy; 2024 Hebron Collegium</p>
+  </footer>
+
+  <script>
+    (function() {
+      const grid = document.getElementById('gallery-grid');
+      for (let i = 1; i <= 24; i++) {
+        const img = document.createElement('img');
+        img.src = `gallery/photo${i}.jpeg`;
+        img.alt = `Photo ${i}`;
+        grid.appendChild(img);
+      }
+    })();
+  </script>
+</body>
+</html>

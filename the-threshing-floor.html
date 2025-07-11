@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The Threshing Floor - Hebron Collegium</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .gallery {
+      position: relative;
+      width: 100%;
+      max-width: 800px;
+      margin: 2rem auto;
+      /* Ensure container has height for absolutely positioned images */
+      aspect-ratio: 16/9;
+      overflow: hidden;
+    }
+    .gallery img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      animation: fade 16s infinite;
+      object-fit: cover;
+    }
+    .gallery img:nth-child(1) { animation-delay: 0s; }
+    .gallery img:nth-child(2) { animation-delay: 4s; }
+    .gallery img:nth-child(3) { animation-delay: 8s; }
+    .gallery img:nth-child(4) { animation-delay: 12s; }
+    @keyframes fade {
+      0%   { opacity: 0; }
+      6%   { opacity: 1; }
+      25%  { opacity: 1; }
+      31%  { opacity: 0; }
+      100% { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <h1>The Hebron Collegium</h1>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="The-Threshing-Floor.html">The Threshing Floor</a>
+    <a href="Retreat-Center.html">Retreat Center</a>
+    <a href="The-College.html">Men&#39;s Bible College</a>
+    <a href="https://madpxm.com/contact" target="_blank">That&#39;s All It Takes</a>
+  </nav>
+
+  <main>
+    <section class="content">
+      <h2>The Threshing Floor</h2>
+      <p>The Threshing Floor: No one leaves unchanged.</p>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="gallery">
+      <img src="images/ThreshingFloor-1.jpeg" alt="Threshing Floor Image 1">
+      <img src="images/ThreshingFloor-2.jpeg" alt="Threshing Floor Image 2">
+      <img src="images/ThreshingFloor-3.jpeg" alt="Threshing Floor Image 3">
+      <img src="images/ThreshingFloor-4.jpeg" alt="Threshing Floor Image 4">
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>&copy; 2024 Hebron Collegium</p>
+  </footer>
+</body>
+</html>
